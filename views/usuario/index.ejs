@@ -1,0 +1,279 @@
+<%- include("../templates/encabezado.ejs") %>
+</head>
+<body>
+  <header>
+    <nav class="menunav">
+      <a class="menu-item" href="/">INICIO</a>
+      <a class="menu-item" href="/blog">BLOG</a>
+      <a class="menu-item" href="https://drive.google.com/drive/folders/1CS3iLZ4YjQeMer01FJn4jhoC3ZeLsvgq?usp=sharing">DRIVE</a>
+      <a class="menu-item" href="/sobremi">SOBRE MI</a>
+    </nav>
+  </header>
+
+    <script>
+        function redirectToDrive() {
+        window.location.href = 'https://drive.google.com/drive/folders/1CS3iLZ4YjQeMer01FJn4jhoC3ZeLsvgq?usp=sharing';
+        }
+    </script>
+
+  <div class="main" name="main">
+    <h1>INTEGRADORA II</h1>
+    <br>
+    <button class="button" onclick="redirectToDrive()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+    </svg>
+  
+    <div class="text">
+       DRIVE
+    </div>
+  
+  </button>
+  <br><br>
+  <br><br>
+
+    <h3>COMPETENCIAS</h3>
+    <p>
+        Implementar soluciones multiplataforma, en la nube y
+        software embebido, en entornos seguros mediante la
+        adquisición y administración de datos e ingeniería de
+        software para contribuir a la automatización de los
+        procesos en las organizaciones.
+    </p>
+    <br>
+    <h3>OBJETIVO</h3>
+    <p>
+        El alumno aplicará metodologías de aprendizaje basada
+        en proyectos para el desarrollo de soluciones
+        tecnológicas.
+    </p>
+    <br>
+    <h4>UNIDAD DE APRENDIZAJE I</h4>
+    <h3>LA PERCEPCION DEL CLIENTE PARA EL DISEÑO DE SOLUCIONES TECNOLOGICAS</h3>
+    <br><br>
+    <div class="temas-unidad">
+        <h2>TEMAS DE LA UNIDAD</h2>
+        <p>1.1 Conceptos
+            clave para la
+            creación
+            soluciones
+            tecnológicas.
+        </p>
+
+        
+
+
+            
+            <br>
+            <a class="blog" href="/blog#tema1">TEMA 1</a>
+            
+            <br>
+            <br>
+
+            <p>
+                1.2 Definición de
+                soluciones a
+                partir de la
+                innovación
+                incremental.
+            </p>
+
+            <br>
+            <a class="blog" href="/blog#tema2">TEMA 2</a>
+            <br>
+            <br>
+
+            <p>
+                1.3 Diseño de
+                interacciones.
+            </p>
+
+            <br>
+            <a class="blog" href="/blog#tema3">TEMA 3</a>
+            <br>
+            <br>
+            <br>
+
+    </div>
+  </div>
+ 
+  <%- include("../templates/pie.ejs") %>
+
+<style>
+  
+    .main{
+       color: white; 
+       padding-bottom: 0px;
+       align-content: center;
+       justify-content: center;
+       text-align: center;
+       width: 600px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .main h1{
+        font-size: 84px;
+    }
+    .main h2{
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .main h3{
+        font-size: 30px;
+    }
+
+    .main p{
+        font-size: large;
+        text-align: center;
+    }
+    .main h4{
+        font-size: 50px;
+    }
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+  .main a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 8.5em;
+  height: 2.9em;
+  border: #ffffff 0.3em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.7s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em
+}
+
+  .menunav {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: transform 0.4s;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .menu-item:hover {
+    color: #de07de;
+    transform: scale(1.2);
+  }
+  @media only screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+}
+.blog {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.blog:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.blog:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1025px) {
+}
+
+
+</style>
